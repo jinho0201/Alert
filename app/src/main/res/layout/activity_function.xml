@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_function"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.management.location.activitys.FunctionActivity">
+
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="35dp"
+        android:text="벨소리 모드 설정"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+       <RadioGroup
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id = "@+id/group1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/text1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RadioButton
+            android:id="@+id/set1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="무음"
+            android:textColor="#000000" />
+
+        <RadioButton
+            android:id="@+id/set2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="진동"
+            android:textColor="#000000" />
+
+
+        <RadioButton
+            android:id="@+id/set3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="소리"
+            android:textColor="#000000" />
+
+       </RadioGroup>
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/group1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="35dp"
+        android:text="WIFI ON/OFF 설정"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <RadioGroup
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id = "@+id/group2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/text2"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/wset1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ON"
+            android:textColor="#000000" />
+
+        <RadioButton
+            android:id="@+id/wset2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="OFF"
+            android:textColor="#000000" />
+
+
+    </RadioGroup>
+
+    <Button
+        android:textSize="18dp"
+        android:id='@+id/button'
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="저장하기"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:textSize="18dp"
+        android:id='@+id/reset'
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="초기화"
+        android:onClick="resetButton"
+        android:layout_above="@+id/button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

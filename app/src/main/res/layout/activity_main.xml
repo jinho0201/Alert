@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.management.location.MainActivity"
+    android:background="@color/background">
+
+    <RelativeLayout
+        android:id = "@+id/house"
+        android:layout_below="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ListView
+
+            android:id = "@+id/listview_house"
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+        </ListView>
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_below="@+id/house"
+        android:background="@color/backgroundBold"
+        android:id = "@+id/top2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:textColor = "#ffffff"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize = "20dp"
+            android:text = "지정 장소"/>
+
+        <Button
+            android:background="#696969"
+            android:layout_centerVertical="true"
+            android:textSize="15dp"
+            android:layout_marginRight="18dp"
+            android:id = '@+id/button_add'
+            android:text = "추가"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+
+            android:layout_alignParentRight="true"
+
+            android:layout_marginEnd="10dp" />
+
+
+    </RelativeLayout>
+
+
+
+
+    <ListView
+        android:layout_below="@+id/top2"
+        android:id = "@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/weather_btn"
+       >
+    </ListView>
+
+
+    <RelativeLayout
+        android:background="@color/backgroundBold"
+        android:id = "@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:textStyle="bold"
+            android:textColor = "#ffffff"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize = "20dp"
+            android:text = "집"/>
+
+
+        <Button
+            android:background="#696969"
+            android:layout_centerVertical="true"
+            android:textSize="15dp"
+            android:layout_marginRight="18dp"
+            android:id = '@+id/button_house'
+            android:text = "추가"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+
+            android:layout_toLeftOf="@+id/button_message"
+
+            android:layout_marginEnd="10dp" />
+
+        <Button
+            android:background="#016410"
+            android:layout_centerVertical="true"
+            android:textSize="15dp"
+            android:layout_marginRight="18dp"
+            android:id = '@+id/button_message'
+            android:text = "메시징"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+
+            android:layout_alignParentRight="true"
+
+            android:layout_marginEnd="10dp" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
